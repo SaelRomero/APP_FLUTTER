@@ -57,7 +57,7 @@ class CardPage extends StatelessWidget {
             image: NetworkImage('https://static.photocdn.pt/images/articles/2018/03/09/articles/2017_8/landscape_photography.jpg'),
             placeholder: AssetImage('assets/images/loading.gif'),
             fadeInDuration: Duration(microseconds: 200),
-            height: 300.0,
+            height: 250.0,
             fit: BoxFit.cover,
           ),
           // Image(
@@ -73,9 +73,15 @@ class CardPage extends StatelessWidget {
 
     return Container(
        decoration: BoxDecoration(
+         color: Colors.red,
         borderRadius: BorderRadius.circular(30.0),
         boxShadow: <BoxShadow>[
-          BoxShadow(color: Colors.red, blurRadius: 10.0, spreadRadius: 2.0,)
+          BoxShadow(
+            color: Colors.black26, 
+            blurRadius: 10.0, 
+            spreadRadius: 2.0,
+            offset: Offset(2.0, -10.0)
+          )
 
         ]
       ),
